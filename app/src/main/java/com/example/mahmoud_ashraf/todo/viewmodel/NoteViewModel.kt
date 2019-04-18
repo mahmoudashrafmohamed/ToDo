@@ -1,9 +1,9 @@
 package com.example.mahmoud_ashraf.todo.viewmodel
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
-import android.arch.lifecycle.LiveData
-import com.example.mahmoud_ashraf.todo.data.db.Note
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import com.example.mahmoud_ashraf.todo.data.model.Note
 import com.example.mahmoud_ashraf.todo.data.db.repository.NoteRepository
 
 /**

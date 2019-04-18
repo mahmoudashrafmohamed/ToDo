@@ -1,9 +1,9 @@
 package com.example.mahmoud_ashraf.todo.data.db.repository
 
 import android.app.Application
-import android.arch.lifecycle.LiveData
 import android.os.AsyncTask
-import com.example.mahmoud_ashraf.todo.data.db.Note
+import androidx.lifecycle.LiveData
+import com.example.mahmoud_ashraf.todo.data.model.Note
 import com.example.mahmoud_ashraf.todo.data.db.NoteDao
 import com.example.mahmoud_ashraf.todo.data.db.NoteDatabase
 
