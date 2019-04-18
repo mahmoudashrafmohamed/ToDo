@@ -56,6 +56,10 @@ dependencies {
     // support vector
     implementation "androidx.vectordrawable:vectordrawable:1.0.0"
 
+    // custom toast
+    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+
+
 
 
     testImplementation 'junit:junit:4.12'

@@ -25,6 +25,7 @@ class NoteItem(val note: Note): Item<ViewHolder>() {
         return R.layout.note_item
     }
 
+
     // todo swipe to delete :)
     // set the direction of swipe you want ....
     override fun getSwipeDirs(): Int {

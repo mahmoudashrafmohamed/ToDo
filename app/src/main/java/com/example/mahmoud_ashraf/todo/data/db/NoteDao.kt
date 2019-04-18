@@ -3,6 +3,7 @@ package com.example.mahmoud_ashraf.todo.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.mahmoud_ashraf.todo.data.model.Note
@@ -16,6 +17,9 @@ import com.example.mahmoud_ashraf.todo.data.model.Note
 interface NoteDao {
     @Insert
     fun insert(note: Note)
+
+    @Delete
+    fun delete(note: Note)
 
     @Query("DELETE FROM notes_table")
     fun deleteAllNotes()

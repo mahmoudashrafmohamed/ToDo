@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.mahmoud_ashraf.todo.R
 import com.example.mahmoud_ashraf.todo.data.model.Note
+import com.sdsmdg.tastytoast.TastyToast
 import kotlinx.android.synthetic.main.activity_add_note.*
 
 class AddNoteActivity : AppCompatActivity(), View.OnClickListener {
@@ -26,7 +27,8 @@ class AddNoteActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun AddNote() {
         if (edit_text_title.text.toString().trim().isBlank() || edit_text_description.text.toString().trim().isBlank()) {
-            Toast.makeText(this, "Can not insert empty note!", Toast.LENGTH_SHORT).show()
+            TastyToast.makeText(this, "Can not insert empty note!", TastyToast.LENGTH_SHORT,
+                TastyToast.ERROR).show()
             return
         }
 
