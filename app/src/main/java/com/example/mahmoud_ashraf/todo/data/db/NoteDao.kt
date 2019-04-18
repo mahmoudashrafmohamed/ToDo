@@ -19,5 +19,5 @@ interface NoteDao {
     fun deleteAllNotes()
 
     @Query("SELECT * FROM notes_table ")
-    fun getAllNotes(): LiveData<List<Note>>
+    fun getAllNotes(): LiveData<List<Note>> // wrap with LiveData for observing the data changes
 }
